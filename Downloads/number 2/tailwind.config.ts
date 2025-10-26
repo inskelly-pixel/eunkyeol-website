@@ -15,6 +15,7 @@ export default {
     },
     extend: {
       colors: {
+        yellowAccent: "#FFD633",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -81,9 +82,9 @@ export default {
             height: "0",
           },
         },
-           'hover-circle-show': {
-      '0%': { transform: 'scale(0)', opacity: '0' },
-      '100%': { transform: 'scale(1)', opacity: '1' },
+           "hover-circle-show": {
+      0: { transform: "scale(0)", opacity: "0" },
+      100: { transform: "scale(1)", opacity: "1" },
     },
       },
       animation: {
