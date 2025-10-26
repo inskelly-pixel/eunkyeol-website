@@ -19,7 +19,7 @@ const ProjectDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border">
+      <header className="">
         <div className="container mx-auto px-6 py-8">
           <div className="flex justify-between items-start">
             <div className="flex gap-16">
@@ -28,9 +28,15 @@ const ProjectDetail = () => {
                 <p className="text-sm text-muted-foreground">{project.year}</p>
               </div>
               <div className="space-y-1">
-                <h2 className="text-sm font-normal">{project.category}</h2>
+                <h2 className="text-sm font-normal, ">{project.category}</h2>
                 <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
                   {project.description}
+                </p>
+              </div>
+              <div className="space-y-1">
+                <h2 className="text-sm font-normal invisible">kkk</h2>
+                <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
+                  {project.description2}
                 </p>
               </div>
             </div>
@@ -46,24 +52,18 @@ const ProjectDetail = () => {
 
       {/* Project Images Grid */}
       <main className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="">
+          
           {project.images.map((image, index) => (
             <div
               key={index}
-              className="aspect-[4/3] bg-muted relative overflow-hidden"
+              // className="aspect-[4/3] bg-muted relative overflow-hidden"
             >
               <img
                 src={image}
                 alt={`${project.title} - Image ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
-              {/* Optional: Add image labels */}
-              <div className="absolute top-4 left-4 bg-background/80 px-2 py-1 text-xs">
-                {index === 0 && "Monotype"}
-                {index === 1 && "Poster Font"}
-                {index === 2 && "Poster Stick"}
-                {index === 3 && "Monotype Version"}
-              </div>
             </div>
           ))}
         </div>
