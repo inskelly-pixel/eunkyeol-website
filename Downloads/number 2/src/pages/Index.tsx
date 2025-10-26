@@ -42,17 +42,25 @@ const Index = () => {
           </div>
 
           {/* Right */}
-          <div className="flex flex-col items-end text-sm text-gray-400 space-y-1">
-            {projects.map((p) => (
-              <Link
-                key={p.id}
-                to={`/project/${p.id}`}
-                className="hover:text-black transition-colors"
-              >
-                <span className="italic">{p.title}</span> {p.year}
-              </Link>
-            ))}
-          </div>
+     <div className="flex flex-col text-sm text-gray-400 space-y-1">
+  {projects.map((p) => (
+       <Link
+      key={p.id}
+      to={`/project/${p.id}`}
+      className="hover:text-black transition-colors flex items-center"
+    >
+      {/* number + title */}
+      <span className="italic ml-[140px] flex">
+        <span className="mr-5">{p.number}</span>
+        {p.title}
+      </span>
+
+      {/* year만 오른쪽 정렬 */}
+      <span className="ml-auto">{p.year}</span>
+    </Link>
+  ))}
+</div>
+
         </div>
       </header>
 
