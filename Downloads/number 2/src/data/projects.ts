@@ -1,8 +1,9 @@
+import { Project } from "@/types/project";
 import frame33 from "./frame33.svg";
 import frame34 from "./frame34.svg";
 import frame35 from "./frame35.svg";
 import frame36 from "./frame36.svg";
-import frame37 from "./frame37.svg";
+// import frame37 from "./frame37.svg";
 // import frame38 from "./frame38.svg";
 // import frame39 from "./frame39.svg";
 // import frame40 from "./frame40.svg";
@@ -16,7 +17,7 @@ export const projects = [
   { id: 2, number: "2", title: "700-08", year: 2024, position: { top: 25, left: 60 }, images: [frame34] },
   { id: 3, number: "3", title: "To My Ideal", year: 2022, position: { top: 35, left: 45 }, images: [frame35] },
   { id: 4, number: "4", title: "Seoul Distortion", year: 2022, position: { top: 15, left: 30 }, images: [frame36] },
-  { id: 5, number: "5", title: "A Choir of Monologues", year: 2024, position: { top: 10, left: 32 }, images: [frame37] }
+  // { id: 5, number: "5", title: "A Choir of Monologues", year: 2024, position: { top: 10, left: 32 }, images: [frame37] }
   // { id: 6, number: "6", title: "Typemoji", year: 2025, position: { top: 10, left: 32 }, images: [frame38] },
   // { id: 7, number: "7", title: "Prova", year: 2025, position: { top: 10, left: 32 }, images: [frame39] },
   // { id: 8, number: "8", title: "Overlock", year: 2024, position: { top: 10, left: 32 }, images: [frame40] },
